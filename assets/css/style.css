@@ -18,25 +18,36 @@ body {
     text-decoration-line: underline;
 }
 #instructions{
-    width: 80%;
+    width: 100%;
     
 }
-#text {
+#main-box {
     box-sizing: content-box;
     width: 40%;
     float: left;
     text-align: left;
     margin-left: 200px;
     line-height: 120%;
-    font-size: 20px;
 }
+#text {
+    font-size: 18px;
+}
+
 #cards {
     float: right;
+    word-spacing: 40px;
+    box-sizing: content-box;
+    padding: 20px;
+    margin-right: 200px;
 }
 #general-display {
-    box-sizing: content-box;
-    width: 50%;
-    margin-left: 300px;
+    box-sizing: border-box;
+    border: double black 5px;
     line-height: 200%;
-    font-size: 22px;
+    font-size: 26px;
+    margin-top: 30px;
+}
+
+#points{
+    
 }
