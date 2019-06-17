@@ -16,31 +16,38 @@
       <h1>Card Collecter</h1>
   </div>
   <div id="instructions">
-      <p>You will be given a random number at the start of the game.</p>
-      <pre><p>                     </p></pre>
-      <p>Below, there are four cards. By clicking on a card
-         you will add a specific amount of points to your total score</p>
-      <pre><p>                     </p></pre>
-      <p>You win the game by matching your total score to the random number,
+      <div id="text">
+        <p>You will be given a random number at the start of the game.
+           Below, there are four cards. By clicking on a card
+           you will add a specific amount of points to your total score.
+           <pre><p>                                     </p></pre>
+           You win the game by matching your total score to the random number,
            you lose the game if your total score goes above the random number</p>
-      <pre><p>                     </p></pre>
-      <p>The value of each card is hidden from you until you click on it</p>
-      <pre><p>                     </p></pre>
-      <p>Each time when the game starts, the game will change the values of each card</p>
+           <pre><p>                                     </p></pre>
+        <p>The value of each card is hidden from you until you click on it.
+           Each time when the game starts, the game will change the values of each card</p>
+      </div>
+      <div id="cards">
+        <div id="row-1">
+          <img class="img" src="assets/images/emporor.png" alt="emperor">
+          <img class="img" src="assets/images/magician.png" alt="magician">
+        </div>
+        <div id="row-2">
+          <img class="img" src="assets/images/priestess.png" alt="priestess">
+          <img class="img" src="assets/images/strength.png" alt="strength">
+        </div>
+      </div>
   </div>
   <br>
-  <div id="cards">
-        <img class="img" src="assets/images/emporor.png" alt="emperor">
-        <img class="img" src="assets/images/magician.png" alt="magician">
-        <img class="img" src="assets/images/priestess.png" alt="priestess">
-        <img class="img" src="assets/images/strength.png" alt="strength">
+  <div id="general-display">
+        <pre><p>                                     </p></pre>
+        <div id="points"><p><span id="points"></span></p></div>
+          <p> Wins:<span id="win-count"></span> </p>
+          <p> Losses:<span id="loss-count"></span> </p>
+      </div>
     </div>
-<div id="general-display">
-    <div id="points"><p><span id="points"></span></p></div>
-      <p> Wins:<span id="win-count"></span> </p>
-      <p> Losses:<span id="loss-count"></span> </p>
-  </div>
 </div>
+
 
 <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
