@@ -20,6 +20,10 @@ var priestess;
 var magician;
 var strength;
 
+$(document).ready(function(){
+    $(":button");
+  });
+
 function setWins() {
     $("#wins").append(wins);
 }
