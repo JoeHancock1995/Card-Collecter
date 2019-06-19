@@ -20,5 +20,12 @@ var priestess;
 var magician;
 var strength;
 
+function setWins() {
+    $("#wins").append(wins);
+}
+
+function setLosses () {
+    $("#losses").append(losses);
+}
 });
 
