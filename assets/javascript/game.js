@@ -31,5 +31,17 @@ function setWins() {
 function setLosses () {
     $("#losses").append(losses);
 }
+
+function setRandomNumber () {
+    randomNumber = getRandomNumber();
+    $("#randomNumber").append(randomNumber);
+}
+
+function setTotalScore() {
+    userScore = 0;
+    $("#totalScore").append(userScore);
+}
+
+
 });
 
