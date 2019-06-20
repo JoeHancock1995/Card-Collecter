@@ -12,11 +12,11 @@ function getRandomNumber () {
     return (Math.floor(Math.random() * (maximum - minimum + 1) ) + minimum);
 }
 
-var cardArray = [];
 var emperorCard;
 var priestessCard;
 var magicianCard;
 var strengthCard;
+var cardArray = [];
 
 function setWins() {
     $("#wins").append(wins);
