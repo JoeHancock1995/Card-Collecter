@@ -33,7 +33,7 @@ function setRandomNumber () {
 
 function setTotalScore() {
     userScore = 0;
-    $("#totalScore").append(userScore);
+    $("#totalScore").append(totalScore);
 }
 
 function setCardNumber() {
@@ -69,19 +69,19 @@ function hideNumbers() {
 }
 
 function showEmperor () {
-    $("#emperorText").css("display", "block");
+    $("#emperorText").css("display", "none");
 }
 
 function showPriestess () {
-    $("#priestessText").css("display", "block");
+    $("#priestessText").css("display", "none");
 }
 
 function showMagician () {
-    $("#magicianText").css("display", "block");
+    $("#magicianText").css("display", "none");
 }
 
 function showStrength () {
-    $("#estrengthText").css("display", "block");
+    $("#strengthText").css("display", "none");
 }
 
 function reset() {
