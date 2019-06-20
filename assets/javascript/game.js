@@ -40,6 +40,14 @@ function setRandomNumber () {
 function setTotalScore() {
     userScore = 0;
     $("#totalScore").append(userScore);
+
+    function setCardNumber() {
+        emperor = getCardNumber();
+        priestess = getCardNumber();
+        magician = getCardNumber();
+        strength = getCardNumber();
+    
+    }
 }
 
 
