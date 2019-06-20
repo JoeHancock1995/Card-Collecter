@@ -4,71 +4,51 @@
     <meta charset="UTF-8">
     <title>unit-4-game</title>   
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Kumar+One&display=swap" rel="stylesheet">
-
 </head>
-
 <body>
-
 <div id="main-content">
-  <div id="title">
-      <h1>Card Collecter</h1>
-  </div>
-
-    <div class="main-box">
+      <div id="main-box">
         <div id="text">
+            <h1 id="title">Card Collecter</h1>
           <p>You will be given a random number at the start of the game.
            Below, there are four cards. By clicking on a card
            you will add a specific amount of points to your total score.
+           <pre><p>                                     </p></pre>
            You win the game by matching your total score to the random number,
            you lose the game if your total score goes above the random number</p>
+           <pre><p>                                     </p></pre>
           <p>The value of each card is hidden from you until you click on it.
            Each time when the game starts, the game will change the values of each card</p>
-        </div> 
+        </div>   
+        <pre><p>                                     </p></pre>
+          <button class="button button" >Press to start</button>
         <div id="general-display">
             <div id="generated"><p>Score to reach: <span id="randomNumber"></span></p></div>
             <div id="aquired"><p>Your total score is:<span id="userScore"></span></p></div>
             <p> Wins:<span id="win-count"></span> </p>
             <p> Losses:<span id="loss-count"></span> </p>
-        </div>  
+        </div>
     </div>
-    <button class="button button" >Press to start</button>
-    <section id="card">
-        <div class="row">
-            <div class="col-lg-2 col-md-2 col-sm-2 col-2">
-                <div id=emperor>
-                    <img src="assets/images/emporor.png" alt="A emperor"></a>
-                    <div id="emperorText"></div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-2">
-                <div id="priestess">
-                    <img src="assets/images/priestess.png" alt="A priestess"></a>
-                    <div id="priestessText"></div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-2">
-                <div id="magician">
-                    <img src="assets/images/magician.png" alt="A magician"></a>
-                    <div id="magicianText"></div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-2">
-                <div id="strength">
-                    <img src="assets/images/strength.png" alt="A strength"></a>
-                    <div id="strengthText"></div>
-                </div>
-            </div>
-    </section>
-
+    <div class="clearfix">
+      <div id="box">
+        <div class="img-container">
+          <img src="assets/images/emporor.png" alt="emperor" style="width:65%">
+        </div>
+        <div class="img-container">
+          <img src="assets/images/priestess.png" alt="priestess" style="width:65%">
+        </div>
+        <div class="img-container">
+          <img src="assets/images/magician.png" alt="magician" style="width:65%">
+        </div>
+        <div class="img-container">
+          <img src="assets/images/strength.png" alt="strength" style="width:65%">
+        </div>
+      </div>
+    </div>
   <br>
 </div>
-
-
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
-</html>
