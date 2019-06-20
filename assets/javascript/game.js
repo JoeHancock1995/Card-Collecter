@@ -33,7 +33,7 @@ function setRandomNumber () {
 
 function setTotalScore() {
     userScore = 0;
-    $("#totalScore").append(totalScore);
+    $("#totalScore").append(userScore);
 }
 
 function setCardNumber() {
