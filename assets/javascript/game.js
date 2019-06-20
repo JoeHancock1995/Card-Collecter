@@ -107,7 +107,61 @@ $(".button").one("click", function startGame () {
 $("#emperorCard").click(function () {
     showEmperor();
     userScore = userScore + emperorCard;
-    console.log("Current score: + userScore");
+    console.log("Current score: " + userScore);
+    $('#totalScore').text(userScore);
+        if (userScore === randomNumber) {
+            wins++;
+            $("#wins").text("Wins: " + wins);
+            alert("You win!");
+            reset();
+        } else if (userScore > randomNumber) {
+            losses++;
+            $("#losses").text("Losses: " + losses);
+            alert("You lose");
+            reset();
+        }
+});
+
+$("#priestessCard").click(function () {
+    showPriestess();
+    userScore = userScore + priestessCard;
+    console.log("Current score:" + userScore);
+    $('#totalScore').text(userScore);
+        if (userScore === randomNumber) {
+            wins++;
+            $("#wins").text("Wins: " + wins);
+            alert("You win!");
+            reset();
+        } else if (userScore > randomNumber) {
+            losses++;
+            $("#losses").text("Losses: " + losses);
+            alert("You lose");
+            reset();
+        }
+});
+
+$("#magicianCard").click(function () {
+    showMagician();
+    userScore = userScore + magicianCard;
+    console.log("Current score: " + userScore);
+    $('#totalScore').text(userScore);
+        if (userScore === randomNumber) {
+            wins++;
+            $("#wins").text("Wins: " + wins);
+            alert("You win!");
+            reset();
+        } else if (userScore > randomNumber) {
+            losses++;
+            $("#losses").text("Losses: " + losses);
+            alert("You lose");
+            reset();
+        }
+});
+
+$("#strengthCard").click(function () {
+    showStrength();
+    userScore = userScore + strengthCard;
+    console.log("Current score: " + userScore);
     $('#totalScore').text(userScore);
         if (userScore === randomNumber) {
             wins++;
