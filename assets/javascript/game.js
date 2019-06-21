@@ -19,11 +19,11 @@ var strengthCard;
 var cardArray = [];
 
 function setWins() {
-    $("#wins").append(wins);
+    $("#win-count").append(wins);
 }
 
 function setLosses () {
-    $("#losses").append(losses);
+    $("#loss-count").append(losses);
 }
 
 function setRandomNumber () {
@@ -88,7 +88,7 @@ function reset() {
     $("#totalScore").empty();
     $("#randomNumber").empty();
     $("#emperorText, #priestessText, #magicianText, strengthText").empty();
-    cardArray.empty();
+    cardArray = [];
     setRandomNumber();
     setTotalScore();
     setCardNumber();
@@ -111,12 +111,12 @@ $("#emperorCard").click(function () {
     $('#totalScore').text(userScore);
         if (userScore === randomNumber) {
             wins++;
-            $("#wins").text("Wins: " + wins);
+            $("#win-count").text(wins);
             alert("You win!");
             reset();
         } else if (userScore > randomNumber) {
             losses++;
-            $("#losses").text("Losses: " + losses);
+            $("#loss-count").text(losses);
             alert("You lose");
             reset();
         }
@@ -129,12 +129,12 @@ $("#priestessCard").click(function () {
     $('#totalScore').text(userScore);
         if (userScore === randomNumber) {
             wins++;
-            $("#wins").text("Wins: " + wins);
+            $("#win-count").text(wins);
             alert("You win!");
             reset();
         } else if (userScore > randomNumber) {
             losses++;
-            $("#losses").text("Losses: " + losses);
+            $("#loss-count").text(losses);
             alert("You lose");
             reset();
         }
@@ -147,12 +147,12 @@ $("#magicianCard").click(function () {
     $('#totalScore').text(userScore);
         if (userScore === randomNumber) {
             wins++;
-            $("#wins").text("Wins: " + wins);
+            $("#win-count").text(wins);
             alert("You win!");
             reset();
         } else if (userScore > randomNumber) {
             losses++;
-            $("#losses").text("Losses: " + losses);
+            $("#loss-count").text(losses);
             alert("You lose");
             reset();
         }
@@ -165,12 +165,12 @@ $("#strengthCard").click(function () {
     $('#totalScore').text(userScore);
         if (userScore === randomNumber) {
             wins++;
-            $("#wins").text("Wins: " + wins);
+            $("#wins").text(wins);
             alert("You win!");
             reset();
         } else if (userScore > randomNumber) {
             losses++;
-            $("#losses").text("Losses: " + losses);
+            $("#loss-count").text(losses);
             alert("You lose");
             reset();
         }
