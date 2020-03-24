@@ -1,5 +1,5 @@
-# unit-4-game
-Card Collector by Joe Hancock
+# Card Collector
+by Joe Hancock
 
 This is my take on crystal collector. On the right hand side are four cards. After the game is started
 a random number between 19 and 120 will be generated in the box towards the bottom.
