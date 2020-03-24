@@ -9,3 +9,5 @@ The goal of the user is to reach the randomly generated score which is displayed
 Doing so will result in a user win prompting an alert and win tally to increase by one. 
 Going over will cause the user to lose and a prompt will notify the user and add one to the loss column.
 \\\
+
+![Image description](https://github.com/JoeHancock1995/Card-Collector/blob/master/assets/screenshot.png)
