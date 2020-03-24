@@ -2,9 +2,6 @@ body {
     background-image: url(white_brick_wall_@2X.png);
     font-family: 'Kumar One', cursive;
 }
-* {
-    box-sizing: border-box;
-  }
   
   .img-container {
     float: left;
@@ -22,8 +19,6 @@ body {
 .img-container {
     padding: 20px;
     border: 5px outset;
-
-    
 }
 .img-container:hover {
     border: 5px inset;
@@ -35,7 +30,7 @@ body {
 
 
 #title {
-    text-align: left;
+    text-align: center;
     margin: 20px;
     padding-bottom: 10px;
     padding-top: 10px;
@@ -81,4 +76,23 @@ body {
     background-color: rgb(255, 255, 255);
     color: black;
     border: double black 5px;
+}
+
+
+@media only screen and (max-width: 640px){
+  body{
+    background-image: url(white_brick_wall_@2X.png);
+    font-family: 'Kumar One', cursive;
+    background-repeat:repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+    background-color: white;
+    overflow: scroll;
+  }
+  #title {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 30px;
+    text-decoration-line: underline;
+}
 }

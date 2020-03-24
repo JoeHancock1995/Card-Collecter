@@ -37,10 +37,10 @@ function setTotalScore() {
 }
 
 function setCardNumber() {
-    emperorCard = getCardNumber();
-    priestessCard = getCardNumber();
-    magicianCard = getCardNumber();
-    strengthCard = getCardNumber();
+    emperorCard = getCardNumber(1, 12);
+    priestessCard = getCardNumber(1, 12);
+    magicianCard = getCardNumber(1, 12);
+    strengthCard = getCardNumber(1, 12);
     $("#emperorText").append(emperorCard);
     $("#priestessText").append(priestessCard);
     $("#magicianText").append(magicianCard);
